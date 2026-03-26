@@ -1,0 +1,27 @@
+{
+  "name": "swu-happy-doa-estimation-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Docusaurus site for the SWU happy DOA estimation course.",
+  "scripts": {
+    "start": "docusaurus start --host 0.0.0.0",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear"
+  },
+  "keywords": [
+    "docusaurus",
+    "doa",
+    "radar",
+    "education"
+  ],
+  "author": "SWU-happy-doa-estimation",
+  "license": "ISC",
+  "dependencies": {
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
+    "clsx": "^2.1.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
