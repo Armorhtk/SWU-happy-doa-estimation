@@ -1,11 +1,13 @@
-﻿:root {
+:root {
   --ifm-color-primary: #0f766e;
   --ifm-color-primary-dark: #0b5d57;
   --ifm-color-primary-darker: #094f4a;
   --ifm-color-primary-light: #148b82;
   --ifm-color-primary-lighter: #1aa69c;
   --ifm-background-color: #eef5f4;
+  --ifm-background-surface-color: rgba(255, 255, 255, 0.92);
   --ifm-heading-color: #0f172a;
+  --ifm-font-color-base: #1e293b;
   --ifm-font-family-base: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   --ifm-code-font-size: 95%;
 }
@@ -25,4 +27,24 @@ body {
 
 .theme-doc-markdown header + * {
   margin-top: 1.25rem;
+}
+
+[data-theme="dark"] {
+  --ifm-background-color: #07161d;
+  --ifm-background-surface-color: #0f2430;
+  --ifm-heading-color: #f8fafc;
+  --ifm-font-color-base: #dbe7ee;
+  --ifm-color-primary: #4dd4c3;
+  --ifm-color-primary-dark: #36c6b4;
+  --ifm-color-primary-darker: #26b4a3;
+  --ifm-color-primary-light: #69ddd0;
+  --ifm-color-primary-lighter: #86e6db;
+}
+
+[data-theme="dark"] body {
+  color: #dbe7ee;
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(5, 18, 26, 0.88);
 }
