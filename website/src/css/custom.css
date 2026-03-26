@@ -1,0 +1,28 @@
+﻿:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0b5d57;
+  --ifm-color-primary-darker: #094f4a;
+  --ifm-color-primary-light: #148b82;
+  --ifm-color-primary-lighter: #1aa69c;
+  --ifm-background-color: #eef5f4;
+  --ifm-heading-color: #0f172a;
+  --ifm-font-family-base: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ifm-code-font-size: 95%;
+}
+
+body {
+  color: #1e293b;
+}
+
+.navbar {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.footer {
+  --ifm-footer-background-color: #08121f;
+}
+
+.theme-doc-markdown header + * {
+  margin-top: 1.25rem;
+}

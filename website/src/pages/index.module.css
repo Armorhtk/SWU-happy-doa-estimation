@@ -1,0 +1,119 @@
+﻿.page {
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.18), transparent 28%),
+    linear-gradient(180deg, #f4fbfa 0%, #eef5f4 100%);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  min-height: calc(100vh - 72px);
+  padding: 4rem min(7vw, 6rem);
+}
+
+.heroText h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 4vw, 4.8rem);
+  line-height: 0.98;
+}
+
+.kicker {
+  margin-bottom: 0.75rem;
+  color: #0f766e;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  max-width: 42rem;
+  margin: 1.2rem 0 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.8rem;
+}
+
+.heroVisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radar {
+  width: min(360px, 90%);
+  filter: drop-shadow(0 20px 40px rgba(15, 118, 110, 0.18));
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding: 0 min(7vw, 6rem) 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(15, 118, 110, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 0.75rem;
+}
+
+.roadmap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem min(7vw, 6rem) 5rem;
+}
+
+.roadmapText {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline div {
+  padding: 1.2rem 1.4rem;
+  border-left: 6px solid #0f766e;
+  border-radius: 0 1rem 1rem 0;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.timeline span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #0f766e;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+@media (max-width: 996px) {
+  .hero,
+  .grid,
+  .roadmap {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 2.5rem;
+  }
+}

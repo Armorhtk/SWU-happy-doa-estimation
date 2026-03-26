@@ -1,0 +1,11 @@
+﻿<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#071821"/>
+  <circle cx="910" cy="315" r="180" fill="none" stroke="#0f766e" stroke-width="14" opacity="0.4"/>
+  <circle cx="910" cy="315" r="120" fill="none" stroke="#0f766e" stroke-width="14" opacity="0.55"/>
+  <circle cx="910" cy="315" r="60" fill="none" stroke="#0f766e" stroke-width="14" opacity="0.7"/>
+  <path d="M910 315 L1038 187" stroke="#5eead4" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="910" cy="315" r="20" fill="#5eead4"/>
+  <text x="90" y="240" fill="#5eead4" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="34">SWU Happy DOA Estimation</text>
+  <text x="90" y="330" fill="#ffffff" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="72" font-weight="700">3 周完成雷达 DOA 入门</text>
+  <text x="90" y="405" fill="#cbd5e1" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="32">面向本科生的开源课程 · Docusaurus + GitHub Pages</text>
+</svg>
