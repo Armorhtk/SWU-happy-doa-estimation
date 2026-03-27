@@ -111,13 +111,17 @@
   aspect-ratio: 1 / 1;
   border-radius: 2rem;
   background: linear-gradient(180deg, #0c1d29 0%, #091923 100%);
+  overflow: hidden;
   box-shadow:
     0 35px 80px rgba(14, 30, 48, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .radar {
-  width: min(18rem, 68%);
+  width: min(22rem, 86%);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 26px rgba(245, 158, 11, 0.08));
 }
 
 [data-theme="dark"] .page {
@@ -156,6 +160,10 @@
 
   .heroVisual {
     min-height: 20rem;
+  }
+
+  .radar {
+    width: min(18rem, 88%);
   }
 
   .titleAccent,

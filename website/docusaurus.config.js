@@ -20,7 +20,25 @@ const config = {
     defaultLocale: "zh-Hans",
     locales: ["zh-Hans"],
   },
-  themes: [],
+  themes: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsDir: "../docs",
+        docsRouteBasePath: "/docs",
+        language: ["en", "zh"],
+        hashed: true,
+        explicitSearchResultPath: true,
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+        searchBarShortcutKeymap: "mod+k",
+        searchBarPosition: "left",
+      },
+    ],
+  ],
   presets: [
     [
       "classic",

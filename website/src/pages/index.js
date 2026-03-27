@@ -1,12 +1,10 @@
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import HeroRadar from "../components/HeroRadar";
 
 import styles from "./index.module.css";
 
 export default function Home() {
-  const radarUrl = useBaseUrl("/img/radar.svg");
-
   return (
     <Layout
       title="SWU Happy DOA Estimation"
@@ -33,7 +31,7 @@ export default function Home() {
           <div className={styles.heroVisual}>
             <div className={styles.visualGlow} />
             <div className={styles.visualCard}>
-              <img src={radarUrl} alt="Radar illustration" className={styles.radar} />
+              <HeroRadar className={styles.radar} />
             </div>
           </div>
         </section>
