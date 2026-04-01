@@ -30,6 +30,7 @@ const navbarToggleStylesPath = path.join(
   "ColorModeToggle",
   "styles.module.css",
 );
+const docusaurusConfigPath = path.join(websiteRoot, "docusaurus.config.js");
 
 if (!fs.existsSync(navbarContentPath)) {
   throw new Error("Missing swizzled Navbar Content component");
@@ -43,8 +44,13 @@ if (!fs.existsSync(navbarToggleStylesPath)) {
   throw new Error("Missing custom Navbar ColorModeToggle styles");
 }
 
+if (!fs.existsSync(docusaurusConfigPath)) {
+  throw new Error("Missing docusaurus config");
+}
+
 const navbarContentSource = fs.readFileSync(navbarContentPath, "utf8");
 const navbarToggleSource = fs.readFileSync(navbarTogglePath, "utf8");
+const docusaurusConfigSource = fs.readFileSync(docusaurusConfigPath, "utf8");
 
 const toggleIndex = navbarContentSource.indexOf("<NavbarColorModeToggle");
 const itemsIndex = navbarContentSource.indexOf("<NavbarItems items={rightItems} />");
@@ -55,6 +61,16 @@ if (toggleIndex === -1 || itemsIndex === -1 || toggleIndex > itemsIndex) {
 
 if (!navbarToggleSource.includes("setColorMode(isDark ? \"light\" : \"dark\")")) {
   throw new Error("Navbar toggle is not using the agreed light/dark two-state switch");
+}
+
+if (!docusaurusConfigSource.includes('const owner = process.env.GITHUB_OWNER || "Armorhtk";')) {
+  throw new Error("Default GitHub owner is not pinned to the real repository owner");
+}
+
+if (
+  !docusaurusConfigSource.includes('href: `https://github.com/${owner}/${projectName}`')
+) {
+  throw new Error("Navbar GitHub item is not wired to the expected repository URL template");
 }
 
 console.log("Navbar theme toggle wiring looks correct.");

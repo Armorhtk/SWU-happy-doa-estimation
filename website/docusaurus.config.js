@@ -1,4 +1,4 @@
-const owner = process.env.GITHUB_OWNER || "your-github-username";
+const owner = process.env.GITHUB_OWNER || "Armorhtk";
 const projectName = "SWU-happy-doa-estimation";
 
 const config = {
