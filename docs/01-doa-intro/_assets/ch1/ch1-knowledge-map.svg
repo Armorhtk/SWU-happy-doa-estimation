@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" fill="none">
+  <rect width="900" height="390" fill="#FFFFFF" rx="18"/>
+  <style>
+    .title { font: 700 22px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #1F2937; }
+    .label { font: 500 15px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #1F2937; }
+    .small { font: 500 13px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #64748B; }
+    .box { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.4; rx: 16; }
+    .accent { fill: #ECFDF5; stroke: #0F766E; stroke-width: 1.6; rx: 16; }
+    .warn { fill: #FFF7ED; stroke: #F59E0B; stroke-width: 1.4; rx: 16; }
+    .arrow { stroke: #64748B; stroke-width: 2; stroke-linecap: round; }
+    .grid { stroke: #CBD5E1; stroke-width: 1.2; }
+    .strong { stroke: #0F766E; stroke-width: 2.2; stroke-linecap: round; }
+    .soft { stroke: #F59E0B; stroke-width: 2; stroke-linecap: round; }
+  </style>
+  <defs>
+  <marker id="arrow-end" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#64748B"/>
+  </marker>
+</defs>
+<text x="42" y="48" class="title">Chapter 1 Roadmap</text>
+<rect x="42" y="92" width="168" height="74" class="accent"/>
+<text x="68" y="124" class="label">Direction of arrival</text>
+<text x="74" y="148" class="small">Angle changes the wavefront</text>
+
+<rect x="258" y="92" width="168" height="74" class="box"/>
+<text x="298" y="124" class="label">Steering vector</text>
+<text x="302" y="148" class="small">A spatial signature</text>
+
+<rect x="474" y="92" width="168" height="74" class="box"/>
+<text x="505" y="124" class="label">Snapshots</text>
+<text x="501" y="148" class="small">Data arranged over time</text>
+
+<rect x="690" y="92" width="168" height="74" class="accent"/>
+<text x="726" y="124" class="label">Covariance</text>
+<text x="729" y="148" class="small">Stable spatial structure</text>
+
+<rect x="258" y="234" width="168" height="74" class="warn"/>
+<text x="287" y="266" class="label">Beam scanning</text>
+<text x="286" y="290" class="small">Test candidate angles</text>
+
+<rect x="474" y="234" width="168" height="74" class="accent"/>
+<text x="517" y="266" class="label">Spectrum</text>
+<text x="498" y="290" class="small">Peaks reveal directions</text>
+
+<line x1="210" y1="129" x2="258" y2="129" class="arrow" marker-end="url(#arrow-end)"/>
+<line x1="426" y1="129" x2="474" y2="129" class="arrow" marker-end="url(#arrow-end)"/>
+<line x1="642" y1="129" x2="690" y2="129" class="arrow" marker-end="url(#arrow-end)"/>
+<line x1="774" y1="166" x2="560" y2="234" class="arrow" marker-end="url(#arrow-end)"/>
+<line x1="426" y1="271" x2="474" y2="271" class="arrow" marker-end="url(#arrow-end)"/>
+
+<text x="42" y="356" class="small">A chapter-long line: wavefront geometry → spatial signature → stable statistics → spectrum peak.</text>
+</svg>

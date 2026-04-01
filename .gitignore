@@ -1,5 +1,6 @@
 # Local git worktrees used for isolated Codex development
 .worktrees/
+.devlog/
 
 # Docusaurus local artifacts
 artifacts/

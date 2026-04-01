@@ -57,6 +57,11 @@ const config = {
   ],
   themeConfig: {
     image: "img/social-card.svg",
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     navbar: {
       title: "SWU Happy DOA",
       logo: {

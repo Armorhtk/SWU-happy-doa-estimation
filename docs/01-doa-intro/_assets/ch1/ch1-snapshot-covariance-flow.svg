@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="360" viewBox="0 0 830 360" fill="none">
+  <rect width="830" height="360" fill="#FFFFFF" rx="18"/>
+  <style>
+    .title { font: 700 22px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #1F2937; }
+    .label { font: 500 15px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #1F2937; }
+    .small { font: 500 13px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #64748B; }
+    .box { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.4; rx: 16; }
+    .accent { fill: #ECFDF5; stroke: #0F766E; stroke-width: 1.6; rx: 16; }
+    .warn { fill: #FFF7ED; stroke: #F59E0B; stroke-width: 1.4; rx: 16; }
+    .arrow { stroke: #64748B; stroke-width: 2; stroke-linecap: round; }
+    .grid { stroke: #CBD5E1; stroke-width: 1.2; }
+    .strong { stroke: #0F766E; stroke-width: 2.2; stroke-linecap: round; }
+    .soft { stroke: #F59E0B; stroke-width: 2; stroke-linecap: round; }
+  </style>
+  <defs>
+  <marker id="arrow-end" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#64748B"/>
+  </marker>
+</defs>
+<text x="36" y="42" class="title">From snapshots to covariance</text>
+
+<rect x="36" y="96" width="176" height="204" class="box"/>
+<text x="64" y="128" class="label">Snapshots</text>
+<text x="62" y="154" class="small">x[1], x[2], ..., x[L]</text>
+<line x1="82" y1="196" x2="162" y2="196" class="grid"/>
+<line x1="82" y1="228" x2="162" y2="228" class="grid"/>
+<line x1="82" y1="260" x2="162" y2="260" class="grid"/>
+<circle cx="92" cy="196" r="4" fill="#0F766E"/>
+<circle cx="122" cy="228" r="4" fill="#0F766E"/>
+<circle cx="146" cy="260" r="4" fill="#0F766E"/>
+
+<rect x="274" y="96" width="212" height="204" class="accent"/>
+<text x="330" y="128" class="label">Data matrix X</text>
+<text x="304" y="154" class="small">columns are time snapshots</text>
+<rect x="320" y="182" width="120" height="84" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<line x1="350" y1="182" x2="350" y2="266" class="grid"/>
+<line x1="380" y1="182" x2="380" y2="266" class="grid"/>
+<line x1="410" y1="182" x2="410" y2="266" class="grid"/>
+<line x1="320" y1="210" x2="440" y2="210" class="grid"/>
+<line x1="320" y1="238" x2="440" y2="238" class="grid"/>
+
+<rect x="548" y="96" width="244" height="204" class="warn"/>
+<text x="602" y="128" class="label">Covariance Rxx</text>
+<text x="606" y="154" class="small">spatial structure made stable</text>
+<rect x="610" y="182" width="120" height="84" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<line x1="640" y1="182" x2="640" y2="266" class="grid"/>
+<line x1="670" y1="182" x2="670" y2="266" class="grid"/>
+<line x1="700" y1="182" x2="700" y2="266" class="grid"/>
+<line x1="610" y1="210" x2="730" y2="210" class="grid"/>
+<line x1="610" y1="238" x2="730" y2="238" class="grid"/>
+<circle cx="625" cy="196" r="4" fill="#0F766E"/>
+<circle cx="690" cy="238" r="4" fill="#0F766E"/>
+
+<line x1="212" y1="198" x2="274" y2="198" class="arrow" marker-end="url(#arrow-end)"/>
+<line x1="486" y1="198" x2="548" y2="198" class="arrow" marker-end="url(#arrow-end)"/>
+<text x="506" y="186" class="small">Rxx = XXᴴ / L</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="380" viewBox="0 0 830 380" fill="none">
+  <rect width="830" height="380" fill="#FFFFFF" rx="18"/>
+  <style>
+    .title { font: 700 22px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #1F2937; }
+    .label { font: 500 15px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #1F2937; }
+    .small { font: 500 13px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #64748B; }
+    .box { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.4; rx: 16; }
+    .accent { fill: #ECFDF5; stroke: #0F766E; stroke-width: 1.6; rx: 16; }
+    .warn { fill: #FFF7ED; stroke: #F59E0B; stroke-width: 1.4; rx: 16; }
+    .arrow { stroke: #64748B; stroke-width: 2; stroke-linecap: round; }
+    .grid { stroke: #CBD5E1; stroke-width: 1.2; }
+    .strong { stroke: #0F766E; stroke-width: 2.2; stroke-linecap: round; }
+    .soft { stroke: #F59E0B; stroke-width: 2; stroke-linecap: round; }
+  </style>
+  <text x="36" y="42" class="title">Uniform linear array and spacing choice</text>
+
+<rect x="36" y="78" width="360" height="260" class="box"/>
+<text x="64" y="112" class="label">Case A: d = λ / 2</text>
+<line x1="86" y1="248" x2="344" y2="248" class="grid"/>
+<circle cx="116" cy="248" r="7" fill="#0F766E"/>
+<circle cx="176" cy="248" r="7" fill="#0F766E"/>
+<circle cx="236" cy="248" r="7" fill="#0F766E"/>
+<circle cx="296" cy="248" r="7" fill="#0F766E"/>
+<line x1="64" y1="162" x2="264" y2="302" class="grid"/>
+<line x1="108" y1="126" x2="308" y2="266" class="grid"/>
+<line x1="152" y1="90" x2="352" y2="230" class="grid"/>
+<text x="66" y="205" class="small">Stable phase progression</text>
+<text x="66" y="308" class="small">A common practical choice for the first experiments</text>
+
+<rect x="430" y="78" width="360" height="260" class="warn"/>
+<text x="458" y="112" class="label">Case B: d = λ</text>
+<line x1="480" y1="248" x2="738" y2="248" class="grid"/>
+<circle cx="510" cy="248" r="7" fill="#F59E0B"/>
+<circle cx="590" cy="248" r="7" fill="#F59E0B"/>
+<circle cx="670" cy="248" r="7" fill="#F59E0B"/>
+<circle cx="750" cy="248" r="7" fill="#F59E0B"/>
+<line x1="458" y1="162" x2="658" y2="302" class="grid"/>
+<line x1="502" y1="126" x2="702" y2="266" class="grid"/>
+<line x1="546" y1="90" x2="746" y2="230" class="grid"/>
+<text x="460" y="205" class="small">Different angles can look too similar</text>
+<text x="460" y="308" class="small">Grating-lobe risk grows when spacing becomes too large</text>
+</svg>
