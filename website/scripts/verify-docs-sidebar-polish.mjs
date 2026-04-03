@@ -35,18 +35,32 @@ assert(
 );
 
 for (const chapterLink of [
-  'label: "第二章 经典 DOA 估计算法"',
+  'label: "导读"',
+  'label: "第一章 DOA估计入门"',
+  'label: "第二章 经典DOA估计算法"',
   'id: "traditional-methods/traditional-methods-overview"',
-  'label: "第三章 深度学习 DOA 估计"',
+  'label: "第三章 数据驱动DOA估计算法"',
   'id: "deep-learning-methods/deep-learning-overview"',
-  'label: "第四章 论文复现与毫米波实战"',
+  'label: "第四章 论文复现和工程实践"',
   'id: "research-practice/research-practice-overview"',
+  'label: "附录"',
+  '"appendices/appendices-math-foundations"',
 ]) {
   assert(
     sidebarSource.includes(chapterLink),
-    `Expected sidebar categories to link directly to overview docs via ${chapterLink}.`,
+    `Expected sidebar structure to include ${chapterLink}.`,
   );
 }
+
+assert(
+  !sidebarSource.includes("collapsed: false"),
+  "Expected docs sidebar categories to avoid default fully expanded state.",
+);
+
+assert(
+  sidebarSource.includes("collapsed: true"),
+  "Expected docs sidebar categories to default to collapsed.",
+);
 
 for (const duplicatedOverviewItem of [
   'items: [\n        "traditional-methods/traditional-methods-overview",',
@@ -56,6 +70,18 @@ for (const duplicatedOverviewItem of [
   assert(
     !normalizedSidebarSource.includes(duplicatedOverviewItem),
     `Expected sidebar category items to omit duplicated overview entry ${duplicatedOverviewItem}.`,
+  );
+}
+
+for (const legacyMarker of [
+  '"faq"',
+  '"about"',
+  '"doa-intro/foundations-overview"',
+  '"doa-intro/foundations-conventional-beamforming"',
+]) {
+  assert(
+    !sidebarSource.includes(legacyMarker),
+    `Expected sidebar to remove legacy entry ${legacyMarker}.`,
   );
 }
 
