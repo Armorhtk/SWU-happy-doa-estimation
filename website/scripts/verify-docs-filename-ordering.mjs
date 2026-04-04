@@ -24,28 +24,24 @@ const expectedDocs = [
     id: "doa-intro-array-observation-model-and-ula",
     title: "1.1 阵列观测模型与均匀线阵",
     slug: "/doa-intro/array-observation-model-and-ula",
-    placeholder: true,
   },
   {
     path: path.join(repoRoot, "docs", "01-doa-intro", "02-narrowband-far-field-model-and-steering-vector.md"),
     id: "doa-intro-narrowband-far-field-model-and-steering-vector",
     title: "1.2 远场窄带信号模型与导向矢量",
     slug: "/doa-intro/narrowband-far-field-model-and-steering-vector",
-    placeholder: true,
   },
   {
     path: path.join(repoRoot, "docs", "01-doa-intro", "03-covariance-beamforming-and-spatial-spectrum.md"),
     id: "doa-intro-covariance-beamforming-and-spatial-spectrum",
     title: "1.3 协方差矩阵、常规波束形成与空间谱估计",
     slug: "/doa-intro/covariance-beamforming-and-spatial-spectrum",
-    placeholder: true,
   },
   {
     path: path.join(repoRoot, "docs", "01-doa-intro", "04-resolution-and-cramer-rao-bound.md"),
     id: "doa-intro-resolution-and-cramer-rao-bound",
     title: "1.4 分辨率问题与克拉美—罗下界",
     slug: "/doa-intro/resolution-and-cramer-rao-bound",
-    placeholder: true,
   },
   {
     path: path.join(repoRoot, "docs", "02-traditional-methods", "01-overview.md"),

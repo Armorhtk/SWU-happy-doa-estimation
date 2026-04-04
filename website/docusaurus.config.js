@@ -1,3 +1,5 @@
+const rehypeKatex = require("rehype-katex").default;
+const remarkMath = require("remark-math").default;
 const owner = process.env.GITHUB_OWNER || "Armorhtk";
 const projectName = "SWU-happy-doa-estimation";
 
@@ -20,6 +22,12 @@ const config = {
     defaultLocale: "zh-Hans",
     locales: ["zh-Hans"],
   },
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.16.44/dist/katex.min.css",
+      type: "text/css",
+    },
+  ],
   themes: [
     [
       "@easyops-cn/docusaurus-search-local",
@@ -47,6 +55,8 @@ const config = {
           path: "../docs",
           routeBasePath: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: false,
         theme: {
