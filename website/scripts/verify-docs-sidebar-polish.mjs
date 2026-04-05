@@ -38,7 +38,7 @@ for (const chapterLink of [
   'label: "导读"',
   'label: "第一章 DOA估计入门"',
   'label: "第二章 经典DOA估计算法"',
-  'label: "第三章 数据驱动DOA估计算法"',
+  'label: "第三章 基于深度学习的DOA估计"',
   'label: "第四章 论文复现和工程实践"',
   'label: "附录"',
   '"appendices/appendices-math-foundations"',

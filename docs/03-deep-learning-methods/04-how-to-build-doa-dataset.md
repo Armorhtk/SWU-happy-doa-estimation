@@ -1,10 +1,10 @@
 ---
-id: deep-learning-dataset-construction-and-input-features
-title: 3.2 数据集构建与输入特征表示
-slug: /deep-learning/dataset-construction-and-input-features
+id: deep-learning-how-to-build-doa-dataset
+title: 3.3 如何构建DOA数据集
+slug: /deep-learning/how-to-build-doa-dataset
 ---
 
-# 3.2 数据集构建与输入特征表示
+# 3.3 如何构建DOA数据集
 
 本节正在开发中，后续内容将按教程架构逐步补充。
 
