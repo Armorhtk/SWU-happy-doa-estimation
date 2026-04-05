@@ -26,6 +26,7 @@ module.exports = {
         "traditional-methods/traditional-music",
         "traditional-methods/traditional-esprit",
         "traditional-methods/traditional-coherent-sources-and-spatial-smoothing",
+        "traditional-methods/traditional-adaptive-beamforming-capon-mvdr",
         "traditional-methods/traditional-performance-metrics-and-experiments",
       ],
     },

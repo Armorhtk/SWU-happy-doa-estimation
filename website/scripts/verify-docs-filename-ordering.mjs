@@ -74,9 +74,15 @@ const expectedDocs = [
     slug: "/traditional-methods/coherent-sources-and-spatial-smoothing",
   },
   {
-    path: path.join(repoRoot, "docs", "02-traditional-methods", "07-performance-metrics-and-experiments.md"),
+    path: path.join(repoRoot, "docs", "02-traditional-methods", "07-adaptive-beamforming-capon-mvdr.md"),
+    id: "traditional-adaptive-beamforming-capon-mvdr",
+    title: "2.6 自适应波束形成：Capon/MVDR 算法原理与实现",
+    slug: "/traditional-methods/adaptive-beamforming-capon-mvdr",
+  },
+  {
+    path: path.join(repoRoot, "docs", "02-traditional-methods", "08-performance-metrics-and-experiments.md"),
     id: "traditional-performance-metrics-and-experiments",
-    title: "2.6 DOA估计性能评价指标与算法实验分析",
+    title: "2.7 DOA估计性能评价指标与算法实验分析",
     slug: "/traditional-methods/performance-metrics-and-experiments",
   },
   {
@@ -177,6 +183,7 @@ const forbiddenPaths = [
   path.join(repoRoot, "docs", "02-traditional-methods", "05-spatial-smoothing-and-root-music.md"),
   path.join(repoRoot, "docs", "02-traditional-methods", "06-model-order-selection.md"),
   path.join(repoRoot, "docs", "02-traditional-methods", "07-cramer-rao-bound.md"),
+  path.join(repoRoot, "docs", "02-traditional-methods", "07-performance-metrics-and-experiments.md"),
   path.join(repoRoot, "docs", "03-deep-learning-methods", "01-overview.md"),
   path.join(repoRoot, "docs", "03-deep-learning-methods", "02-data-processing-and-feature-engineering.md"),
   path.join(repoRoot, "docs", "03-deep-learning-methods", "03-learning-paradigms.md"),
