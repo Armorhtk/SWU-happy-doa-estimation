@@ -38,11 +38,8 @@ for (const chapterLink of [
   'label: "导读"',
   'label: "第一章 DOA估计入门"',
   'label: "第二章 经典DOA估计算法"',
-  'id: "traditional-methods/traditional-methods-overview"',
   'label: "第三章 数据驱动DOA估计算法"',
-  'id: "deep-learning-methods/deep-learning-overview"',
   'label: "第四章 论文复现和工程实践"',
-  'id: "research-practice/research-practice-overview"',
   'label: "附录"',
   '"appendices/appendices-math-foundations"',
 ]) {

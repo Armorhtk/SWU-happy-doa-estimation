@@ -44,12 +44,6 @@ const expectedDocs = [
     slug: "/doa-intro/resolution-and-cramer-rao-bound",
   },
   {
-    path: path.join(repoRoot, "docs", "02-traditional-methods", "01-overview.md"),
-    id: "traditional-methods-overview",
-    title: "第二章 经典DOA估计算法",
-    slug: "/traditional-methods/overview",
-  },
-  {
     path: path.join(repoRoot, "docs", "02-traditional-methods", "02-subspace-decomposition.md"),
     id: "traditional-eigendecomposition-and-subspace-basics",
     title: "2.1 特征值分解与子空间基本思想",
@@ -86,12 +80,6 @@ const expectedDocs = [
     slug: "/traditional-methods/performance-metrics-and-experiments",
   },
   {
-    path: path.join(repoRoot, "docs", "03-deep-learning-methods", "01-overview.md"),
-    id: "deep-learning-overview",
-    title: "第三章 数据驱动DOA估计算法",
-    slug: "/deep-learning/overview",
-  },
-  {
     path: path.join(repoRoot, "docs", "03-deep-learning-methods", "02-basic-tasks-and-workflow.md"),
     id: "deep-learning-basic-tasks-and-workflow",
     title: "3.1 深度学习DOA估计的基本任务与实现流程",
@@ -125,12 +113,6 @@ const expectedDocs = [
     title: "3.5 深度学习方法与经典方法对比",
     slug: "/deep-learning/comparison-with-classical-methods",
     placeholder: true,
-  },
-  {
-    path: path.join(repoRoot, "docs", "04-research-practice", "01-overview.md"),
-    id: "research-practice-overview",
-    title: "第四章 论文复现和工程实践",
-    slug: "/research-practice/overview",
   },
   {
     path: path.join(repoRoot, "docs", "04-research-practice", "02-trans-paper-reproduction.md"),
@@ -189,14 +171,17 @@ const forbiddenPaths = [
   path.join(repoRoot, "docs", "01-doa-intro", "03-array-basics.md"),
   path.join(repoRoot, "docs", "01-doa-intro", "04-snapshots-covariance.md"),
   path.join(repoRoot, "docs", "01-doa-intro", "05-first-experiment.md"),
+  path.join(repoRoot, "docs", "02-traditional-methods", "01-overview.md"),
   path.join(repoRoot, "docs", "02-traditional-methods", "03-adaptive-beamforming.md"),
   path.join(repoRoot, "docs", "02-traditional-methods", "04-music-and-esprit.md"),
   path.join(repoRoot, "docs", "02-traditional-methods", "05-spatial-smoothing-and-root-music.md"),
   path.join(repoRoot, "docs", "02-traditional-methods", "06-model-order-selection.md"),
   path.join(repoRoot, "docs", "02-traditional-methods", "07-cramer-rao-bound.md"),
+  path.join(repoRoot, "docs", "03-deep-learning-methods", "01-overview.md"),
   path.join(repoRoot, "docs", "03-deep-learning-methods", "02-data-processing-and-feature-engineering.md"),
   path.join(repoRoot, "docs", "03-deep-learning-methods", "03-learning-paradigms.md"),
   path.join(repoRoot, "docs", "03-deep-learning-methods", "04-training-and-generalization.md"),
+  path.join(repoRoot, "docs", "04-research-practice", "01-overview.md"),
   path.join(repoRoot, "docs", "04-research-practice", "02-paper-reproduction.md"),
   path.join(repoRoot, "docs", "04-research-practice", "03-automotive-mmwave-practice.md"),
 ];
