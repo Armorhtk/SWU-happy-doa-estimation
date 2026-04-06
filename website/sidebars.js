@@ -55,6 +55,8 @@ module.exports = {
         "research-practice/research-practice-trans-paper-reproduction",
         "research-practice/research-practice-fmcw-mmwave-signal-processing-pipeline",
         "research-practice/research-practice-automotive-mmwave-doa-validation",
+        "research-practice/research-practice-sim2real-in-deep-learning-doa",
+        "research-practice/research-practice-unsupervised-doa-methods",
       ],
     },
     {
