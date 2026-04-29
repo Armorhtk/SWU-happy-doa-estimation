@@ -1,6 +1,6 @@
 # SWU-happy-doa-estimation
 
-> 面向本科生的中文 DOA 估计教程站：从阵列信号处理基础到经典算法，再到深度学习与工程实践。
+> 面向本科生的中文   DOA   估计教程站：从阵列信号处理基础到经典算法，再到深度学习与工程实践。
 
 [![Stars](https://img.shields.io/github/stars/Armorhtk/SWU-happy-doa-estimation?style=flat-square)](https://github.com/Armorhtk/SWU-happy-doa-estimation/stargazers)
 [![Forks](https://img.shields.io/github/forks/Armorhtk/SWU-happy-doa-estimation?style=flat-square)](https://github.com/Armorhtk/SWU-happy-doa-estimation/network/members)
@@ -69,7 +69,7 @@
 
 - 提交 Issue：勘误、问题反馈、学习建议
 - 提交 Pull Request：修正内容、优化表达、补充实验说明
-- 分享使用体验：你在学习中的卡点和建议非常有价值
+- 分享使用体验：您在学习中的卡点和建议非常有价值
 
 ## 贡献者
 
@@ -80,7 +80,7 @@
 ## 致谢
 
 感谢每一位愿意阅读、反馈和贡献的同学与开发者。  
-这个项目从开源社区中获益很多，也会持续以开源方式迭代。  
+这个项目从开源社区中获益很多，也将会持续以开源方式迭代。  
 同时感谢 [Datawhale](https://github.com/datawhalechina) 社区开源教程项目在组织方式与表达风格上的启发。
 
 ## 许可证
